@@ -26,8 +26,13 @@ module.exports = {
 						table: 'mst_seagroup', 
 						field_value: 'seagroup_id', field_display: 'seagroup_name', 
 						api: 'retail/inv/seagroup/list'})
-				}				
-			}
+				}			
+			},
+
+			uniques : {
+				'sea_name': ['sea_name']
+			},
+
 		},
 	},
 
