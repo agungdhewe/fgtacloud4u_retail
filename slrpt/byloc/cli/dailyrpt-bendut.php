@@ -44,8 +44,8 @@ console::class(new class($args) extends cli {
 		try {
 			
 			$currentdate = new DateTime();
-			//$reportdate = new DateTime(date("Y-m-d", strtotime($currentdate->format('Y-m-d')." -1 day")));
-			$reportdate = new DateTime(date("Y-m-d", strtotime($currentdate->format('Y-m-d'))));
+			$reportdate = new DateTime(date("Y-m-d", strtotime($currentdate->format('Y-m-d')." -1 day")));
+			//$reportdate = new DateTime(date("Y-m-d", strtotime($currentdate->format('Y-m-d'))));
 
 			if (property_exists($this->args->params, '--date')) {
 				$reportdate = new DateTime($this->args->params->{"--date"});
