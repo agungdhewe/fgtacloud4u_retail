@@ -36,7 +36,7 @@ console::class(new class($args) extends cli {
 	function getRecepient() {
 		return [
 			"agung@transfashionindonesia.com",
-			
+			"merisca@transfashionindonesia.com"
 		];
 	}
 
