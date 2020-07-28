@@ -25,19 +25,34 @@ console::class(new class($args) extends cli {
 		
 		$DB_CONFIG = DB_CONFIG['DSR'];
 		$DB_CONFIG['param'] = DB_CONFIG_PARAM['mariadb'];
+
+		// print_r($DB_CONFIG);
+		echo "connecting to db ...";
 		$this->db = new \PDO(
 					$DB_CONFIG['DSN'], 
 					$DB_CONFIG['user'], 
 					$DB_CONFIG['pass'], 
 					$DB_CONFIG['param']
 		);		
+		echo "Connected.\r\n";
 	}
 
 	function getRecepient() {
-		return [
-			"agung@transfashionindonesia.com",
-			// "merisca@transfashionindonesia.com"
-		];
+		$mailtarget = __LOCALDB_DIR . "/mailtarget/dailyrpt-bendut.json";
+		$fp = fopen($mailtarget, "r");
+		$content = fread($fp, filesize($mailtarget));
+		fclose($fp);
+
+		try {
+			$jsonrecp = json_decode($content);
+			if (json_last_error()!=JSON_ERROR_NONE) {
+				throw new Exception('error decode json in ' + mailtarget);
+			}
+			return $jsonrecp;
+		} catch (Exception $ex) {
+			throw $ex;
+		}
+
 	}
 
 	function execute() {
@@ -61,7 +76,7 @@ console::class(new class($args) extends cli {
 
 			echo "Sending email ...";
 			$recipients = $this->getRecepient();
-			$subject = "(TEST) Sales Summary Report F ($type) per " . $this->dparam->PERTANGGAL;
+			$subject = "Sales Summary Report F ($type) per " . $this->dparam->PERTANGGAL;
 			$message = $this->getMessageContent();
 			$attachment = [];
 			$this->SendMail($recipients, $subject, $message, $attachment);
@@ -164,8 +179,8 @@ console::class(new class($args) extends cli {
 			$dparam->PERTANGGAL =  self::NAMANAMAHARI[$date->format('w')] . ', ' . $date->format('d/m/Y');
 
 			$RUNNING_WEEK = $this->getWeekByDate($date->format('Y-m-d'));
-			$LAST_WEEK =  $this->getWeekByDate(date('Y-m-d', strtotime($RUNNING_WEEK->DTSTART. " -1 day")));
-			
+			//$LAST_WEEK =  $this->getWeekByDate(date('Y-m-d', strtotime($RUNNING_WEEK->DTSTART. " -1 day")));
+			$LAST_WEEK =  $this->getWeekByDate(date('Y-m-d', strtotime($RUNNING_WEEK->DTSTART)));
 
 			$dparam->A_DTSTART = $LAST_WEEK->DTSTART;
 			$dparam->A_DTEND = $LAST_WEEK->DTEND;
