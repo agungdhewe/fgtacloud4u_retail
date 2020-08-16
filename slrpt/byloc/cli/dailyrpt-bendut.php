@@ -87,16 +87,16 @@ console::class(new class($args) extends cli {
 	}
 
 
-	function getServer() {
-		return (object) [
-			'host' => 'mail.transfashionindonesia.com',
-			'port' => 587,
-			'username' => 'agung',
-			'password' => '0necupofm1lk',
-			'fromname' => 'agung nugroho',
-			'from' => 'agung@transfashionindonesia.com'
-		];
-	}
+	// function getServer() {
+	// 	return (object) [
+	// 		'host' => 'mail.transfashionindonesia.com',
+	// 		'port' => 587,
+	// 		'username' => 'agung',
+	// 		'password' => '0necupofm1lk',
+	// 		'fromname' => 'agung nugroho',
+	// 		'from' => 'agung@transfashionindonesia.com'
+	// 	];
+	// }
 
 
 	function getMessageContent() {
