@@ -21,7 +21,7 @@ require_once __DIR__ . '/generate-sheet-byclassgro.php';
 
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xls;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 
 define('GTT_DAILYSALES', 'GTT_DAILYSALES2');
@@ -155,7 +155,7 @@ function salesstat_generate($self) {
 
 
 		$doc->setActiveSheetIndex(0);
-		$writer = new Xls($doc);
+		$writer = new Xlsx($doc);
 		$writer->save($filepath);
 
 		$recipients = getRecepient($self);
