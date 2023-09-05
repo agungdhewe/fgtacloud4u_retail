@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "/var/www/fgtacloud4u/server_apps/retail"
+		},
+		{
+			"path": "/var/www/fgtacloud4u/server"
 		}
 	],
 	"settings": {
