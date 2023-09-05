@@ -1,0 +1,8 @@
+{
+	"title" : "Store Locator",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+	}	
+}
+

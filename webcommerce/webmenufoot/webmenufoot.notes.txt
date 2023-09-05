@@ -1,0 +1,7 @@
+webmenufoot
+
+original path : /apps/retail/webcommerce/webmenufoot
+created by    : Agung Nugroho
+                agung_dhewe@yahoo.com
+created date  : 2019-12-11
+================================================

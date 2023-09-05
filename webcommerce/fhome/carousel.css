@@ -1,0 +1,220 @@
+:root {
+	--carousel-height: 500px;
+	--carousel-height-1366: 650px;
+	--carousel-height-1440: 800px;
+
+}
+
+
+#fgta-carousel {
+	width: 100%;
+	height: var(--carousel-height);
+	/* background-color: #ccc;  */
+	overflow: hidden;
+	position: relative;
+}
+
+
+.fgta-carousel-loading {
+	width: 100%;
+	height: var(--carousel-height);
+}
+
+.fgta-carousel-view {
+	position: relative;
+	top: calc(-1 * var(--carousel-height));
+	height: var(--carousel-height);
+	display: inline-flex;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.fgta-carousel-image {
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	transition: 0.2s;
+
+}
+
+
+.fgta-carousel-info {
+	position: relative;
+	height: 150px;
+	margin-top: -150px;
+	padding: 10px 10px;
+	bottom: 0px;
+}
+
+.fgta-carousel-title {
+	font-weight: bold;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	text-shadow: -1px 0px 10px rgba(0,0,0,0.5);
+}
+
+.fgta-carousel-descr {
+	/* mix-blend-mode: darken; */
+	text-align: center;
+	color: #fff;
+	margin-top: 5px;
+}
+
+
+.fgta-carousel-btn {
+	display: block;
+	width: 20px;
+	height: 32px;
+	background-color: #ffffff66;
+	mix-blend-mode: overlay;
+	cursor: pointer;
+	visibility: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+
+.fgta-carousel-nextprev {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: -780px;
+}
+
+
+.fgta-carousel-pages {
+	position: absolute;
+	top: calc(var(--carousel-height) - 20px);
+	color: red;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fgta-carousel-dot {
+	width: 5px;
+	height: 5px;
+	background-color: #00000066;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	mix-blend-mode: overlay;
+}
+
+.fgta-carousel-dot-active {
+	width: 8px;
+	height: 8px;
+	background-color: #000000cc;
+	mix-blend-mode: overlay;
+
+}
+
+.fgta-carousel-content {
+	object-fit: cover;
+	min-height: 100%;
+}
+
+.fgta-carousel-morelink {
+	text-align: center;
+	margin-top: 15px;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+	#fgta-carousel {
+		height: calc(var(--carousel-height) + 120px);
+	}
+
+	.fgta-carousel-info {
+		height: 120px;
+		margin-top: -0px;
+		background-color: #fff;
+	}
+
+	.fgta-carousel-title {
+		color: #000;
+		text-shadow: none;
+	}
+
+	.fgta-carousel-descr {
+		color: #000;
+		text-align: left;
+	}
+}
+
+
+@media only screen and (min-width: 451px) {
+	.fgta-carousel-info {
+		height: 90px;
+		margin-top: -90px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.fgta-carousel-title {
+		font-size: 18px;
+		text-align: left;
+	}
+
+	.fgta-carousel-descr {
+		text-align: left;
+		/* display: none; */
+	} 
+
+	.fgta-carousel-morelink {
+		text-align: left;
+	}	
+}
+
+@media only screen and (min-width: 1024px) {
+	.fgta-carousel-info {
+		height: 150px;
+		margin-top: -150px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	#fgta-carousel {
+		height: var(--carousel-height-1366);
+	}
+
+	.fgta-carousel-view {
+		height: var(--carousel-height-1366);
+	}
+
+	.fgta-carousel-nextprev {
+		top: -840px;
+	}
+
+	.fgta-carousel-pages {
+		top: calc(var(--carousel-height-1366) - 25px);
+	}
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+	#fgta-carousel {
+		height: var(--carousel-height-1440);
+	}
+
+	.fgta-carousel-view {
+		height: var(--carousel-height-1440);
+	}
+
+	.fgta-carousel-nextprev {
+		top: -950px;
+	}	
+
+	.fgta-carousel-pages {
+		top: calc(var(--carousel-height-1440) - 25px);
+	}
+
+}
+

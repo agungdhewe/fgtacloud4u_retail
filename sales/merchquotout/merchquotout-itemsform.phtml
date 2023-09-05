@@ -1,0 +1,300 @@
+<div id="pnl_edititemsform">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Items</div>
+		<a id="pnl_edititemsform-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+	<div id="pnl_edititemsform-title" style="margin-top: 0px; margin-bottom: 30px; font-weight: bold; font-size: 1.2em">XXXXXXX</div>
+
+
+	<form id="pnl_edititemsform-form">
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_id" class="easyui-textbox" mapping="merchquotoutitem_id"  maxlength="14"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row cbo_merchitem_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Item</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-cbo_merchitem_id" class="easyui-combo" style="width: 400px" mapping="merchitem_id" display="merchitem_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_art" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ART</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_art" class="easyui-textbox" mapping="merchitem_art"  maxlength="30"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_mat" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">MAT</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_mat" class="easyui-textbox" mapping="merchitem_mat"  maxlength="30"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_col" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COL</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_col" class="easyui-textbox" mapping="merchitem_col"  maxlength="30"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_size" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SIZE</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_size" class="easyui-textbox" mapping="merchitem_size"  maxlength="30"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_name" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Name</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_name" class="easyui-textbox" mapping="merchitem_name"  maxlength="255"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_qty" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Qty</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_qty" class="easyui-numberbox" mapping="merchquotoutitem_qty" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_price" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Price</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_price" class="easyui-numberbox" mapping="merchquotoutitem_price" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_pricediscpercent" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Disc (%)</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_pricediscpercent" class="easyui-numberbox" mapping="merchquotoutitem_pricediscpercent" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row chk_merchquotoutitem_isdiscvalue" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-chk_merchquotoutitem_isdiscvalue" class="easyui-checkbox c1" mapping="merchquotoutitem_isdiscvalue" data-options="label: 'Disc by Value', labelPosition: 'after', checked: false , labelWidth: '300px'">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_pricediscvalue" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Disc Value</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_pricediscvalue" class="easyui-numberbox" mapping="merchquotoutitem_pricediscvalue" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_subtotal" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Subtotal</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_subtotal" class="easyui-numberbox" mapping="merchquotoutitem_subtotal" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_estgp" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Estimated GP</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_estgp" class="easyui-numberbox" mapping="merchquotoutitem_estgp" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchquotoutitem_estgppercent" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Estimated GP (%)</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotoutitem_estgppercent" class="easyui-numberbox" mapping="merchquotoutitem_estgppercent" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<?=$this->Section('Properties', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edititemsform_row cbo_merchitemctg_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Category</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-cbo_merchitemctg_id" class="easyui-combo" style="width: 400px" mapping="merchitemctg_id" display="merchitemctg_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row cbo_merchsea_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Season</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-cbo_merchsea_id" class="easyui-combo" style="width: 400px" mapping="merchsea_id" display="merchsea_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row cbo_brand_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Brand</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-cbo_brand_id" class="easyui-combo" style="width: 400px" mapping="brand_id" display="brand_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row cbo_itemclass_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Item Class</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-cbo_itemclass_id" class="easyui-combo" style="width: 400px" mapping="itemclass_id" display="itemclass_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_picture" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Picture</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_picture" class="easyui-textbox" mapping="merchitem_picture"  maxlength="90"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Original Pricing', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edititemsform_row txt_merchitem_priceori" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Price Ori</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_priceori" class="easyui-numberbox" mapping="merchitem_priceori" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_price" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Price</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_price" class="easyui-numberbox" mapping="merchitem_price" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_pricediscpercent" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Disc (%)</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_pricediscpercent" class="easyui-numberbox" mapping="merchitem_pricediscpercent" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_pricediscvalue" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Disc Value</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_pricediscvalue" class="easyui-numberbox" mapping="merchitem_pricediscvalue" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_cogs" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">cogs</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_cogs" class="easyui-numberbox" mapping="merchitem_cogs" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Inventory Info', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edititemsform_row txt_merchitem_saldo" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Saldo</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_saldo" class="easyui-numberbox" mapping="merchitem_saldo" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row dt_merchitem_saldodt" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Tanggal Saldo</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-dt_merchitem_saldodt" class="easyui-datebox" style="width: 400px" mapping="merchitem_saldodt" data-options="editable:false , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row txt_merchitem_lastrv" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Last RV</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchitem_lastrv" class="easyui-textbox" mapping="merchitem_lastrv"  maxlength="30"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edititemsform_row dt_merchitem_lastrvdt" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Last RV Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-dt_merchitem_lastrvdt" class="easyui-datebox" style="width: 400px" mapping="merchitem_lastrvdt" data-options="editable:false , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<div class="form_row pnl_edititemsform_row txt_merchquotout_id" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edititemsform-txt_merchquotout_id" class="easyui-textbox" mapping="merchquotout_id"  maxlength="30"  style="width: 400px" data-options="multiline:false  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<div style="margin-bottom: 10px">
+				<input id="pnl_edititemsform-autoadd" type="checkbox"><label for="pnl_edititemsform-autoadd">Otomatis tambah baru setelah berhasil disimpan</label>
+			</div>
+			<div>
+				<a id="pnl_edititemsform-btn_save" class="easyui-linkbutton c1" style="width: 100px">Simpan</a>
+			</div>
+		</div>
+	</div>	
+
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; height: 40px; display: flex; justify-content: space-between; padding: 5px 2px 2px 2px ">
+		<div>
+			<a id="pnl_edititemsform-btn_prev" class="easyui-linkbutton c8" style="width: 50px">Prev</a>
+			<a id="pnl_edititemsform-btn_next" class="easyui-linkbutton c8" style="width: 50px">Next</a>
+		</div>
+
+		<div>
+			<a id="pnl_edititemsform-btn_addnew" class="easyui-linkbutton c8" style="width: 100px">Tambah Baru</a>
+		</div>
+
+		<div>
+			<a id="pnl_edititemsform-btn_delete" class="easyui-linkbutton c5" style="width: 100px">Hapus</a>
+		</div>
+	</div>
+
+
+
+
+</div>	

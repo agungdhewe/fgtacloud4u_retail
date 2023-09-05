@@ -1,0 +1,9 @@
+{
+	"title" : "Home Commerce",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		
+	}	
+}
+

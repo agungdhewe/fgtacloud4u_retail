@@ -1,0 +1,8 @@
+{
+	"title" : "Contact Us",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+	}	
+}
+

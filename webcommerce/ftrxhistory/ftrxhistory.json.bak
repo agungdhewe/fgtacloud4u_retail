@@ -1,0 +1,8 @@
+{
+	"title" : "Transaction History",
+	"allowanonymous" : true,
+	"allowedgroups" : ["public"],
+	"apis" : {
+	}	
+}
+

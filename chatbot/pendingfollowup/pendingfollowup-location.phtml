@@ -1,0 +1,31 @@
+<div id="pnl_location">
+	<div class="fgta-page-title">Pending Followup By Location</div>
+
+	<div id="pnl_location-pnl_head" style="display: flex; align-items: flex-end">
+
+		<div class="list-search-wrap" style="width: calc(100% - 65px); display: flex;">
+			<div class="list-search-item" style="width: 45px">
+				<a href="javascript:void(0)" id="pnl_location-btn_refresh" class="easyui-linkbutton c8" style="width: 70px">Refresh</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="margin-top: 10px">
+		<table id="pnl_location-tbl_list" paging="true" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th mapping="location">location</th>
+					<th mapping="pending_count">pending_count</th>
+					<th mapping="pending_oldest">pending_oldest</th>
+				</tr>
+				<tr style="background-color: #cccccc; height: 30px">
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Location</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000; text-align: right">Count</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000; text-align: right">Oldest</td>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+</div>

@@ -1,0 +1,8 @@
+{
+	"title" : "Register",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+	}	
+}
+

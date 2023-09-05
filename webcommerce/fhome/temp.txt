@@ -1,0 +1,50 @@
+<div id="fgta-carousel" >
+	<div class="fgta-carousel-loading">
+		loading ...	
+	</div>
+
+	<div class="fgta-carousel-view">
+
+
+		<!-- <div class="fgta-carousel-image">
+			<video autoplay muted loop class="fgta-carousel-content">
+				<source src="index.php/public/assets/testimg/rain.mp4" type="video/mp4">
+			</video>
+			<div class="fgta-carousel-info">
+				<div class="fgta-carousel-title">TESTING VIDEO CONTENT</div>
+				<div class="fgta-carousel-descr">kolo kulo kelas kalih kulo kulak kolang kaling kalih kilo</div>
+				<a href="javascript:void(0)" style="pointer-events: all;">test</a>
+			</div>			
+		</div>
+
+		<div class="fgta-carousel-image" style="background: url('index.php/public/assets/testimg/image1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center top;">
+			<div class="fgta-carousel-content"></div>
+			<div class="fgta-carousel-info">
+				<div class="fgta-carousel-title">FROM FURLA WITH LOVE</div>
+				<div class="fgta-carousel-descr">kolo kulo kelas kalih kulo kulak kolang kaling kalih kilo</div>
+				<a href="javascript:void(0)" style="pointer-events: all;">test</a>
+			</div>
+		</div> -->
+	
+		<div class="fgta-carousel-image" style="background: url('index.php/public/assets/testimg/furla-main-1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center top;"></div>
+		<div class="fgta-carousel-image" style="background: url('index.php/public/assets/testimg/furla-main-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center top;"></div>
+		<div class="fgta-carousel-image" style="background: url('index.php/public/assets/testimg/furla-main-3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center top;"></div>
+		<div class="fgta-carousel-image" style="background: url('index.php/public/assets/testimg/furla-main-4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center top;"></div>
+
+
+	</div>
+
+	<div class="fgta-carousel-nextprev">
+		<a class="fgta-carousel-btn fgta-carousel-btn_prev" href="javascript:void(0)"
+			style="background: url('index.php/public/assets/icons/icon-prev.svg'); background-repeat: no-repeat; background-size: cover; background-position: center top; background-color: #ffffff88"
+		></a>
+		
+		<a class="fgta-carousel-btn fgta-carousel-btn_next" href="javascript:void(0)"
+			style="background: url('index.php/public/assets/icons/icon-next.svg'); background-repeat: no-repeat; background-size: cover; background-position: center top; background-color: #ffffff88"
+		></a>
+	</div>
+
+	<div class="fgta-carousel-pages">
+	</div>
+
+</div>

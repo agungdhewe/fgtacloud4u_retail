@@ -1,0 +1,18 @@
+/* API yang akan digunakan di program
+
+
+	export const testapi = 'fgta/framework/formdev/nama-api'
+
+
+kemdian, di program bisa diakses dengan
+
+	$ui.apis.testapi
+
+*/
+
+export const load_merchitemgro_id = 'retail/webcommerce/webmerchitemgro/list'
+export const load_gender_id = 'retail/webcommerce/webgender/list'
+export const load_cluster_id = 'retail/webcommerce/webcluster/list-byuser'
+export const load_webproptype_id = 'retail/webcommerce/webproptype/list'
+
+

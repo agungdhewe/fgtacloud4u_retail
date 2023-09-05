@@ -1,0 +1,211 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Feedback</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_id" class="easyui-textbox" mapping="feedback_id"  maxlength="14" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Name</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_name" class="easyui-textbox" mapping="feedback_name"  maxlength="90" style="width: 400px" data-options="multiline: false , disabled: false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Email</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_email" class="easyui-textbox" mapping="feedback_email"  maxlength="90" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Phone</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_phone" class="easyui-textbox" mapping="feedback_phone"  maxlength="90" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Message</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_message" class="easyui-textbox" mapping="feedback_message"  maxlength="1000" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Browser Name</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_browsername" class="easyui-textbox" mapping="feedback_browsername"  maxlength="90" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Browser Version</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_browserversion" class="easyui-textbox" mapping="feedback_browserversion"  maxlength="90" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Browser OS</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_browseros" class="easyui-textbox" mapping="feedback_browseros"  maxlength="90" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Continent</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_continent" class="easyui-textbox" mapping="feedback_continent"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Continent Code</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_continentcode" class="easyui-textbox" mapping="feedback_continentcode"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Country</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_country" class="easyui-textbox" mapping="feedback_country"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Country Code</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_countrycode" class="easyui-textbox" mapping="feedback_countrycode"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">State</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_state" class="easyui-textbox" mapping="feedback_state"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">State Code</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_statecode" class="easyui-textbox" mapping="feedback_statecode"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">City</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_city" class="easyui-textbox" mapping="feedback_city"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Postal Code</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_postalcode" class="easyui-textbox" mapping="feedback_postalcode"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Metro Code</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_metrocode" class="easyui-textbox" mapping="feedback_metrocode"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Latitude</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_latitude" class="easyui-textbox" mapping="feedback_latitude"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Longitude</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_longitude" class="easyui-textbox" mapping="feedback_longitude"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Time Zone</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_timezone" class="easyui-textbox" mapping="feedback_timezone"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Date Time</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_feedback_datetime" class="easyui-textbox" mapping="feedback_datetime"  maxlength="120" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Cluster</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_cluster_id" class="easyui-combo" style="width: 400px" mapping="cluster_id" display="cluster_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Cluster harus diisi', disabled: true"   validType="requiredcombo['pnl_edit-cbo_cluster_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; height: 40px; display: flex; justify-content: space-between; padding: 5px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol yang lin disini -->
+		
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="width">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

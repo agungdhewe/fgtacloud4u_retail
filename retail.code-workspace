@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "/var/www/fgtacloud4u/server_apps/retail"
+		}
+	],
+	"settings": {
+		"editor.insertSpaces": false,
+		"editor.detectIndentation": false,
+		"favorites.resources": [
+			{
+				"filePath": "/var/www/fgtacloud4u/server/core/database/menus/modules-kalista-all.json",
+				"group": "Default"
+			}
+		],
+
+		"restoreTerminals.terminals": [
+			{
+				"splitTerminals": [
+					{
+						"name": "Server",
+						"commands": ["cd /var/www/fgtacloud4u/server", "clear"],
+					}
+				]
+			},
+		]
+
+	}
+}

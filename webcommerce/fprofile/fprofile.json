@@ -1,0 +1,8 @@
+{
+	"title" : "Profile",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+	}	
+}
+

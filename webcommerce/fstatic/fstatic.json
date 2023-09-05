@@ -1,0 +1,8 @@
+{
+	"title" : "Static",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+	}	
+}
+

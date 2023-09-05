@@ -1,0 +1,518 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Order</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row pnl_edit_row txt_merchorderin_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_id" class="easyui-textbox" mapping="merchorderin_id"  maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_unit_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Unit</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_unit_id" class="easyui-combo" style="width: 400px" mapping="unit_id" display="unit_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Unit harus diisi'"   validType="requiredcombo['pnl_edit-cbo_unit_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_owner_dept_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Item Owner Dept</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_owner_dept_id" class="easyui-combo" style="width: 400px" mapping="owner_dept_id" display="owner_dept_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Departemen harus diisi'"   validType="requiredcombo['pnl_edit-cbo_owner_dept_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_partner_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Partner</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_partner_id" class="easyui-combo" style="width: 400px" mapping="partner_id" display="partner_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Partner Harus diisi', disabled: false"   validType="requiredcombo['pnl_edit-cbo_partner_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_merchquotout_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Quotation</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_merchquotout_id" class="easyui-combo" style="width: 400px" mapping="merchquotout_id" display="merchquotout_descr" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Quotation Harus diisi', disabled: false"   validType="requiredcombo['pnl_edit-cbo_merchquotout_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_orderin_isunreferenced" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_orderin_isunreferenced" class="easyui-checkbox c1" mapping="orderin_isunreferenced" data-options="label: 'UnReferenced', labelPosition: 'after', checked: false , labelWidth: '300px'">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_orderintype_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Order Type</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_orderintype_id" class="easyui-combo" style="width: 400px" mapping="orderintype_id" display="orderintype_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Order Type Harus diisi', disabled: false"   validType="requiredcombo['pnl_edit-cbo_orderintype_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_ref" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Ref</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_ref" class="easyui-textbox" mapping="merchorderin_ref"  maxlength="90" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_descr" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Descr</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_descr" class="easyui-textbox" mapping="merchorderin_descr"  maxlength="255" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Descr harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row dt_merchorderin_dt" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_merchorderin_dt" class="easyui-datebox" style="width: 400px" mapping="merchorderin_dt" data-options="editable:false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row dt_merchorderin_dteta" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Date ETA</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_merchorderin_dteta" class="easyui-datebox" style="width: 400px" mapping="merchorderin_dteta" data-options="editable:false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_ae_empl_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">AE</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_ae_empl_id" class="easyui-combo" style="width: 400px" mapping="ae_empl_id" display="ae_empl_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_project_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Project</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_project_id" class="easyui-combo" style="width: 400px" mapping="project_id" display="project_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_totalqty" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Total Qty</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_totalqty" class="easyui-numberbox" mapping="merchorderin_totalqty" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_total" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Total</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_total" class="easyui-numberbox" mapping="merchorderin_total" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<?=$this->Section('Down Payment', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row chk_orderin_ishasdp" >
+			<div class="form_label_col">Down Payment</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_orderin_ishasdp" class="easyui-checkbox c1" mapping="orderin_ishasdp" data-options="label: 'have to pay downpayment', labelPosition: 'after', checked: false , labelWidth: '300px'">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_orderin_dpvalue" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Value (%)</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_orderin_dpvalue" class="easyui-numberbox" mapping="orderin_dpvalue" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Tax', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row cbo_ppn_taxtype_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">PPN</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_ppn_taxtype_id" class="easyui-combo" style="width: 400px" mapping="ppn_taxtype_id" display="ppn_taxtype_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_ppn_taxvalue" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">PPN Value (%)</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_ppn_taxvalue" class="easyui-numberbox" mapping="ppn_taxvalue" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_ppn_include" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_ppn_include" class="easyui-checkbox c1" mapping="ppn_include" data-options="label: 'PPN Include', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Chart of Accounts', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row cbo_arunbill_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA AR Unbill</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_arunbill_coa_id" class="easyui-combo" style="width: 400px" mapping="arunbill_coa_id" display="arunbill_coa_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'AR harus diisi'"   validType="requiredcombo['pnl_edit-cbo_arunbill_coa_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_ar_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA AR</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_ar_coa_id" class="easyui-combo" style="width: 400px" mapping="ar_coa_id" display="ar_coa_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'AR harus diisi'"   validType="requiredcombo['pnl_edit-cbo_ar_coa_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_dp_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA Downpayment</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_dp_coa_id" class="easyui-combo" style="width: 400px" mapping="dp_coa_id" display="dp_coa_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'OrderIn COA Downpayment harus diisi'"   validType="requiredcombo['pnl_edit-cbo_dp_coa_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_sales_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA Sales</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_sales_coa_id" class="easyui-combo" style="width: 400px" mapping="sales_coa_id" display="sales_coa_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'OrderIn Sales COA harus diisi'"   validType="requiredcombo['pnl_edit-cbo_sales_coa_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_salesdisc_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA Disc Sales</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_salesdisc_coa_id" class="easyui-combo" style="width: 400px" mapping="salesdisc_coa_id" display="salesdisc_coa_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_ppn_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA PPN Payable</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_ppn_coa_id" class="easyui-combo" style="width: 400px" mapping="ppn_coa_id" display="ppn_coa_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_ppnsubsidi_coa_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">COA Subsidi PPN</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_ppnsubsidi_coa_id" class="easyui-combo" style="width: 400px" mapping="ppnsubsidi_coa_id" display="ppnsubsidi_coa_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;">Apabila PPN include COA ini perlu diisi</div>
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Amount Summary', true, true)?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row txt_merchorderin_totalitem" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Total Item</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_totalitem" class="easyui-numberbox" mapping="merchorderin_totalitem" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_salesgross" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Gross Sales</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_salesgross" class="easyui-numberbox" mapping="merchorderin_salesgross" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_discount" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Dicount</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_discount" class="easyui-numberbox" mapping="merchorderin_discount" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_subtotal" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Sub Total</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_subtotal" class="easyui-numberbox" mapping="merchorderin_subtotal" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_pph" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">PPh</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_pph" class="easyui-numberbox" mapping="merchorderin_pph" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_nett" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Sales Nett</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_nett" class="easyui-numberbox" mapping="merchorderin_nett" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_ppn" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">PPN</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_ppn" class="easyui-numberbox" mapping="merchorderin_ppn" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_totaladdcost" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Additional Cost</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_totaladdcost" class="easyui-numberbox" mapping="merchorderin_totaladdcost" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_payment" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Total Payment</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_payment" class="easyui-numberbox" mapping="merchorderin_payment" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Estimated Gross Profit', true, true)?>
+		<div class="fgta_section_collapsible defbottomborder" style="display: none">
+					
+		<div class="form_row pnl_edit_row txt_merchorderin_estgp" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">GP</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_estgp" class="easyui-numberbox" mapping="merchorderin_estgp" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_estgppercent" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">GP (%)</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_estgppercent" class="easyui-numberbox" mapping="merchorderin_estgppercent" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<div class="form_row pnl_edit_row cbo_dept_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Dept</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_dept_id" class="easyui-combo" style="width: 400px" mapping="dept_id" display="dept_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Departemen harus diisi'"   validType="requiredcombo['pnl_edit-cbo_dept_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_trxmodel_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Model Trx</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_trxmodel_id" class="easyui-combo" style="width: 400px" mapping="trxmodel_id" display="trxmodel_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Model Trx harus diisi'"   validType="requiredcombo['pnl_edit-cbo_trxmodel_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row cbo_doc_id" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Doc</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_doc_id" class="easyui-combo" style="width: 400px" mapping="doc_id" display="doc_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'ID harus diisi', disabled: true"   validType="requiredcombo['pnl_edit-cbo_doc_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_version" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Doc Version</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_version" class="easyui-numberbox" mapping="merchorderin_version" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_merchorderin_iscommit" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_merchorderin_iscommit" class="easyui-checkbox c1" mapping="merchorderin_iscommit" data-options="label: 'Commit', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_commitby" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">CommitBy</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_commitby" class="easyui-textbox" mapping="merchorderin_commitby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_commitdate" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">CommitDate</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_commitdate" class="easyui-textbox" mapping="merchorderin_commitdate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_merchorderin_isapprovalprogress" style="display: none">
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_merchorderin_isapprovalprogress" class="easyui-checkbox c1" mapping="merchorderin_isapprovalprogress" data-options="label: 'Progress', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_merchorderin_isapproved" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_merchorderin_isapproved" class="easyui-checkbox c1" mapping="merchorderin_isapproved" data-options="label: 'Approved', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_merchorderin_isdeclined" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_merchorderin_isdeclined" class="easyui-checkbox c1" mapping="merchorderin_isdeclined" data-options="label: 'Declined', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_approveby" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Approve By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_approveby" class="easyui-textbox" mapping="merchorderin_approveby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_approvedate" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Approve Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_approvedate" class="easyui-textbox" mapping="merchorderin_approvedate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_declineby" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Decline By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_declineby" class="easyui-textbox" mapping="merchorderin_declineby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_declinedate" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Decline Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_declinedate" class="easyui-textbox" mapping="merchorderin_declinedate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row chk_merchorderin_isclose" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_merchorderin_isclose" class="easyui-checkbox c1" mapping="merchorderin_isclose" data-options="label: 'Close', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_closeby" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Close By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_closeby" class="easyui-textbox" mapping="merchorderin_closeby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row txt_merchorderin_closedate" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Close Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_merchorderin_closedate" class="easyui-textbox" mapping="merchorderin_closedate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+		<div id="pnl_edit-detil" class="form_row" style="margin-top: 30px">
+			<div class="form_label_col"></div>
+			<div class="form_input_col detilbox" style="border: 0px solid black">
+				<div class="fgtable-head" style="height: 25px; padding: 5px 0px 0px 5px">Detil Informations</div>
+				<div class="fgtable-head-drow" style="height: 25px; padding: 5px 5px 0px 5px; " onclick="$ui.getPages().ITEMS['pnl_edit'].handler.detil_open('pnl_edititemsgrid')">
+					<div id="pnl_edit-txt_items_title" class="detilgrid-text">Items</div>
+					<div id="pnl_edit-txt_items_value" class="detilgrid-value">&nbsp;</div>
+				</div>
+				<div class="fgtable-head-drow" style="height: 25px; padding: 5px 5px 0px 5px; " onclick="$ui.getPages().ITEMS['pnl_edit'].handler.detil_open('pnl_editapprovalgrid')">
+					<div id="pnl_edit-txt_approval_title" class="detilgrid-text">Approval</div>
+					<div id="pnl_edit-txt_approval_value" class="detilgrid-value">&nbsp;</div>
+				</div>
+
+			</div>		
+		</div>		
+		
+		
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; display: flex; justify-content: space-between; padding: 10px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol yang lin disini -->
+			<a id="pnl_edit-btn_print" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="iconCls:'icon-print'">print</a>
+			
+			<a id="pnl_edit-btn_commit" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="iconCls:'fgta-icon-commit'">Commit</a>			
+			<a id="pnl_edit-btn_uncommit" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="iconCls:'fgta-icon-uncommit'">UnCommit</a>
+			
+			
+				<a id="pnl_edit-btn_approve" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="plain:true,iconCls:'fgta-icon-posting'">Approve</a>
+				<a id="pnl_edit-btn_decline" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="plain:true,iconCls:'fgta-icon-unposting'">Decline</a>
+				
+			
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="margin-bottom: 10px; margin-right: 10px">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

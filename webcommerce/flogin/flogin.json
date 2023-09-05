@@ -1,0 +1,10 @@
+{
+	"title" : "Login",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		"getloginurl" : {"allowanonymous" : true},
+		"authlogin" : {"allowanonymous" : true}
+	}	
+}
+

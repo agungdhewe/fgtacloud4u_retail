@@ -1,0 +1,17 @@
+<div class="contenttitle">Our Stores</div>
+<div id="storedatacontainer">
+	<?php $CITIES = $this->getCities() ?>
+	<?php foreach ($CITIES as $CITY) { ?>
+	<div>
+		<div class="blocktitle"><?=$CITY['city_name']?></div>
+
+		<?php $SITES = $this->getSites($CITY['city_id']) ?>
+		<?php foreach ($SITES as $SITE) { ?>
+		<div class="storedata">
+			<a href="index.php/module/retail/webcommerce/fstorelocator?id=<?=$SITE['site_id']?>"><?=$SITE['site_name']?></a>
+		</div>
+		<?php } ?>
+
+	</div> 
+	<?php } ?>
+</div>

@@ -1,0 +1,7 @@
+<?php if (!$this->siteinfo) { ?>
+	<!-- tampilkan daftar toko -->
+	<?php require_once $this->ViewPageAll ?>
+<?php } else { ?>
+	<!-- Tampilkan toko spesifik -->
+	<?php require_once $this->ViewPageStore ?>
+<?php } ?>

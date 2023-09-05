@@ -1,0 +1,64 @@
+<?php
+
+require_once __ROOT_DIR.'/rootdir/mpctest/mpcconnector.php';
+
+
+$publickey = '-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/U+VUasRoiK3lDBI1bx8YRLkj
+pTtf76MjjmkEdLsgTh6gdXsj4vCG1O2Z+pRAX2ZKL8NELQ/PWbUz51Ni11oaQf6o
+muUx0vMnmJ6UGuTEdHfNNpe5AlhW0FThuqlgq26MM2Qs3hIrmMj5JnVcji06gc3y
+wrNHHnvrss+eKz3F8wIDAQAB
+-----END PUBLIC KEY-----';
+
+$privatekey = '-----BEGIN PRIVATE KEY-----
+MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAL9T5VRqxGiIreUM
+EjVvHxhEuSOlO1/voyOOaQR0uyBOHqB1eyPi8IbU7Zn6lEBfZkovw0QtD89ZtTPn
+U2LXWhpB/qia5THS8yeYnpQa5MR0d802l7kCWFbQVOG6qWCrbowzZCzeEiuYyPkm
+dVyOLTqBzfLCs0cee+uyz54rPcXzAgMBAAECgYAzIs0sXszX05AGo89KEMUSy2tg
+J41S+s1zd2CCHGDXJYnyAPREhycaIlbOzLZK7jR8p39c/V44YRWZJb6XsE8YNzC9
+7wresEa1COM/fK42YSquipbhVKa34+Q9oYzCnWAm4h06LFRqb2lECZNNt7lWdvSM
+xfNZoF/YaaGgR3LZAQJBAOFoZj2iTL9BFjI0pEsuan6B+HQKx87EQ7Ifnfga2Gef
+6U+IfFq5miLaIDYU6IkHZwm/UsuFXlyMcKuLqJgOXGECQQDZS2m2KyJqMny9dTbX
+o12JNSYAf45K51CjnSCZTpLfn5JQAlPyYjt3ofq/C6MJbeBTeZy2sfp5qAep36vI
+GuLTAkAjOtD4Axzhq4ePk0C2a2vDmAbABEtUWsKF3YEwHOoD0C+D+b4N5AJePh9Y
+tI3flOOa12dWXeLwrhaSCULxeRUhAkBLF3yYr59dA8WH05H4Q0R3vh473djWmcmM
+QSia0kR/cy2k6KkKAlh6p0d37hWRlJ8JOeWmXSsqD59WXS2IIYJxAkEAsf3hDYDy
+g9XQarwzhlxnYkNH6ysEk4hUf7hwAboozMTZ/l7N/v+LRNz+5GjCcVzTODru5qra
+cCCgI+nBq+NfpA==
+-----END PRIVATE KEY-----';
+
+
+$config = (object)[
+    'ApplicationId' => '50002TFS01',
+    'ApplicationSecret' => 'd293rj1wx2qqkn44n615eyt73xj80w35',
+    'PrivateKey' => $privatekey
+];
+
+
+use \TransFashion\MPC\MPCConnector;
+
+try {
+	$mpc = new MPCConnector($config);
+	$registration = $mpc->RequestRegistrationPage();
+} catch (\Exception $ex) {
+	echo $ex->getMessage();
+}
+
+
+
+?>
+
+<script>
+location.href='<?=$registration?>';
+</script>
+
+<div style="display: flex; justify-content center; background-color: #111; width: 100%">
+
+	<div style="width: 800px; height: 600px; border: 0px; background-color: #fff">
+	
+	</div>
+
+
+</div>
+
+

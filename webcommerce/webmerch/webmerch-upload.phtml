@@ -1,0 +1,50 @@
+<div id="pnl_upload">
+	<div class="fgta-page-title">Upload Merchandise</div>
+
+
+	<form id="pnl_upload-form">
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Brand</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_upload-cbo_brand_id" class="easyui-combo" style="width: 400px" mapping="brand_id" display="brand_name" data-options="editable:false, valueField:'id', textField:'text' "   >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Format</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_upload-cbo_merchformat_id" class="easyui-combo" style="width: 400px" mapping="merchformat_id" display="merchformat_name" data-options="editable:false, valueField:'id', textField:'text'"   >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Season</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_upload-cbo_sea_id" class="easyui-combo" style="width: 400px" mapping="sea_id" display="sea_name" data-options="editable:false, valueField:'id', textField:'text' "   >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Paste Data</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<div id="pnl_upload-obj_pastewait" style="display: none">wait..</div>
+				<div id="pnl_upload-obj_pastebox" class="pastebox" contenteditable placeholder="Paste template disini..." oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''" ></div>
+			</div>
+		</div>
+
+
+
+
+	</form>
+
+
+
+
+
+</div>

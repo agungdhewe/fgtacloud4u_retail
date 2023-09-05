@@ -1,0 +1,99 @@
+<!--CAROUSEL START -->
+<div id="fgta-carousel" >
+	<div class="fgta-carousel-loading">
+		loading ...	
+	</div>
+
+	<div class="fgta-carousel-view">
+		<?php foreach ($this->carousel as $crs) { ?>
+		<div class="fgta-carousel-image" style="background: url('<?=$crs->editorial_imgsrc?>'); background-repeat: no-repeat; background-size: cover; background-position: center top;">
+			<div class="fgta-carousel-content"></div>
+			<div class="fgta-carousel-info">
+				<div class="fgta-carousel-title" style="display:none"><?=$crs->editorial_title?></div>
+				<div class="fgta-carousel-descr"  style="display:none"><?=$crs->editorial_preface?> </div>
+				<div class="fgta-carousel-morelink"  style="display:none">
+					<a class="discoverlink-black" href="<?=$crs->editorial_link?>" style="pointer-events: all;">DISCOVER MORE</a>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+
+	<div class="fgta-carousel-nextprev">
+		<a class="fgta-carousel-btn fgta-carousel-btn_prev" href="javascript:void(0)"
+			style="background: url('index.php/public/assets/icons/icon-prev.svg'); background-repeat: no-repeat; background-size: cover; background-position: center top; background-color: #ffffff88"
+		></a>
+		<a class="fgta-carousel-btn fgta-carousel-btn_next" href="javascript:void(0)"
+			style="background: url('index.php/public/assets/icons/icon-next.svg'); background-repeat: no-repeat; background-size: cover; background-position: center top; background-color: #ffffff88"
+		></a>
+	</div>
+	<div class="fgta-carousel-pages"></div>
+</div>
+<!--CAROUSEL END -->
+
+
+<div class="page-content-main" style="padding-top: 50px">
+
+
+	<?php foreach ($this->focus as $crs) { ?>		
+	<div class="content-hl-container">	
+		<div class="content-hl-image" style="background: url('<?=$crs->editorial_imgsrc?>'); background-repeat: no-repeat; background-size: cover; background-position: center top;"></div>
+		<div class="content-hl-card">
+			<div class="content-hl-title"><?=$crs->editorial_title?></div>
+			<div class="content-hl-descr"><?=$crs->editorial_preface?> </div>
+			<a class="discoverlink-white" href="<?=$crs->editorial_link?>" style="pointer-events: all;">DISCOVER MORE</a>
+		</div>
+	</div>
+	<?php } ?>	
+
+
+
+	<?php foreach ($this->highlight as $crs) { ?>		
+	<div class="content-hl-container">	
+		<div class="content-hl-image" style="background: url('<?=$crs->editorial_imgsrc?>'); background-repeat: no-repeat; background-size: cover; background-position: center top;"></div>
+		<div class="content-hl-card">
+			<div class="content-hl-title"><?=$crs->editorial_title?></div>
+			<div class="content-hl-descr"><?=$crs->editorial_preface?> </div>
+			<a class="discoverlink-white" href="<?=$crs->editorial_link?>" style="pointer-events: all;">DISCOVER MORE</a>
+		</div>
+	</div>
+	<?php } ?>	
+
+
+
+	<br><br><br>
+
+	<div>
+		<button class="fbutton fbutton-black">Button Black</button>
+	</div>
+
+	<br>
+
+	<div>
+		<button class="fbutton fbutton-gold">Button Black</button>
+	</div>
+
+	<br><br><br>
+
+
+	<img src="index.php/public/images/sample.jpg" width="200" height="200" class="thumnail-round-s">
+
+
+	<div class="fcard">
+		test content
+	</div>
+
+	<div class="fcard">
+		test content
+	</div>
+
+	<div class="fcard">
+		test content
+	</div>
+
+	<br><br><br>
+
+
+
+</div>
+

@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":269:{a:2:{s:7:"defects";a:3:{s:22:"testFunction::testCoba";i:5;s:25:"testFunction::testExecute";i:4;s:15:"test::testKedua";i:3;}s:5:"times";a:4:{s:22:"testFunction::testCoba";d:0;s:25:"testFunction::testExecute";d:0;s:17:"test::testExecute";d:0;s:15:"test::testKedua";d:0;}}}
